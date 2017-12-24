@@ -7,7 +7,7 @@ contract Greetings {
   // constructor - Defined by having the same name as the contract itself
   // called only once, when the contract is deployed to the blockchain
   // doesnt return any value
-  function Greetings() {
+  function Greetings() public {
     message = "I am ready!";
   }
 
@@ -15,7 +15,7 @@ contract Greetings {
     message = _message;
   }
 
-  function getGreetings() constant return (string) {
+  function getGreetings() public constant return (string) {
     return message;
   }
 }
