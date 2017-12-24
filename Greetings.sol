@@ -1,4 +1,4 @@
-pragma solidity ^0.4.11 // Defines version of solidity
+pragma solidity ^0.4.11; // Defines version of solidity
 
 contract Greetings {
   // state
@@ -11,11 +11,11 @@ contract Greetings {
     message = "I am ready!";
   }
 
-  function setGreetings(string _message) public return (string) {
+  function setGreetings(string _message) public {
     message = _message;
   }
 
-  function getGreetings() public constant return (string) {
+  function getGreetings() public constant returns (string) {
     return message;
   }
 }
